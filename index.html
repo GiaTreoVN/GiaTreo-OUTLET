@@ -487,11 +487,7 @@
             updateStatus('Lỗi tải dữ liệu', 'error');
         }
 
-        // Tự động load products khi trang được tải
         window.addEventListener('load', loadProducts);
-
-        // Tự động reload dữ liệu mỗi 30 giây (để cập nhật nếu bạn chỉnh sửa Sheets)
-        setInterval(loadProducts, 30000);
     </script>
 </body>
 </html>
